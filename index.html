@@ -33,11 +33,11 @@
         <div id="countOrders"></div>
       </button>
       <button class="nav__right__profile" aria-label="profile"></button>
-      <div class="nav__right__cartbox" id="cartBox"> <!-- cart starts  -->
-        <h3>Cart</h3>
-        <hr>
-        <div id="ordersInCart">
-          <p id="emptyCart">Your cart is empty.</p>
+      <div class="nav__right__cartbox" id="cartBox" data-is-cart="1"> <!-- cart starts  -->
+        <h3 data-is-cart="1">Cart</h3>
+        <hr data-is-cart="1">
+        <div id="ordersInCart" data-is-cart="1">
+          <p id="emptyCart" data-is-cart="1">Your cart is empty.</p>
         </div>
       </div> <!-- cart ends -->
     </div>
@@ -105,7 +105,7 @@
         <button aria-label="close" class="modal-close" id="closeModal"></button>
         <button aria-label="previous" class="modal-previous"></button>
         <img src="images/image-product-1.jpg" id="bigImgModal" data-index-number="1" alt="sneakers" >
-        <button aria-label="next" class="modal-next"></button>
+        <button aria-label="next" class="modal-next"></button> 
       </div>
       <div class="modal__thumbnails">
         <picture class="modal__thumbnails__small" >

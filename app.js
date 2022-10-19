@@ -301,3 +301,9 @@ addBtn.addEventListener("click", () => {
         emptyCart.classList.remove("fill--cart");
     }
 });
+
+window.addEventListener("click", (e) => {
+    if (!cartBox.contains(e.target) && e.target.id != "cartBtn" ) {
+       cartBox.classList.remove("showCartbox");
+    }
+})
